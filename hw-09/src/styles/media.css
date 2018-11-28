@@ -1,0 +1,128 @@
+
+@media (min-width:320){
+
+}
+
+
+/*TABLET*/
+
+@media (min-width:768px) {
+    .wrapper{
+        width: 748px;
+      /*  display: flex;
+        flex-wrap: wrap;*/
+    }
+    .page-header{
+        padding-top:40px; 
+    }
+    .page-header-navigation{
+        width: 680px;
+        height: 42px;
+        margin-bottom: 150px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        align-items: center;
+
+    }
+    .site-menu{
+   
+        margin: 0px;
+    }
+    .site-logo{
+        margin-bottom: 0;
+    }
+
+    .section-holidays {
+        width: 492px;
+        padding-bottom: 234px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-title{
+        font-size: 50px;
+        margin-bottom: 38px;
+    }
+
+    .section-descr {
+        width: 404px;
+        margin: 0 auto;
+        margin-bottom: 35px;
+    }
+
+    .section-link{
+        width: 226px;
+        margin: 0 auto;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .section-partners-title{
+        margin: 0 auto;
+        margin-bottom: 33px;
+    }
+    .main-contant-section{
+        padding-bottom: 74px;
+
+    }
+
+    .partners-list{
+        width: 464px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .partners-list-item{
+        flex: 0 0 220px;
+        margin-bottom: 58px;
+       /* margin-right: 20px;*/
+      }
+
+    .partners-list-item:nth-child(2n+1){
+        margin-right: 20px;
+    }
+
+    .partners-list-item:nth-last-child(-n+2){
+        margin-bottom: 0px;
+    }
+
+    button {
+        margin: 0 auto;
+
+    }
+
+}
+
+
+/*DESKTOP*/
+
+@media (min-width:962px) { /*фактическая ширина 940, но нужно чтобі врапер біл чуть меньше ?????*/
+
+    .wrapper{
+        width: 940px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .section-holidays{
+        width: 500px;
+    }
+
+    .partners-list{
+        width: 940px;
+    }
+
+    .partners-list-item:not(:last-child){
+        margin: 0;
+        margin-right: 20px;
+    }
+    .partners-list-item:last-child{
+        margin: 0;
+    }
+   
+}
+
+

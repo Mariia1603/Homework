@@ -1,0 +1,520 @@
+html {
+    box-sizing:border-box;
+}
+*,
+*::before, 
+*::after {
+    box-sizing: inherit;
+}
+
+.body{
+    margin: 0px;
+    font-size: 15px;
+    font-family: "Roboto";
+    color: rgb(153, 153, 153);
+    line-height: 1.6;
+}
+
+.img{
+    display: block;
+    max-width: 100%;
+    height:auto;
+}
+
+/*.clearfix::after{
+    display: table;
+    content: "";
+    clear: both;*/
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hydden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+}
+
+
+/*HEADER AND SECTION WITH INLINE BLOCKS
+/*.page-header{
+    background-color: coral;
+}
+
+.page-header-navigation{
+    padding-top: 40px;
+    padding-bottom: 134px;
+}
+
+.site-logo {
+    display: inline-block;
+    text-decoration: none;
+    vertical-align: middle;
+    font-size: 30px;
+    font-weight: 700;
+}
+.site-menu{
+    display: inline-block;
+    text-align: right;
+    width: 1106px;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    background-color: paleturquoise;
+    text-decoration: none;
+    list-style: none;
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-size: 14px;
+
+}
+.site-menu-item{
+    display: inline-block;
+
+}
+.site-menu li:not(:last-child){
+    margin-right: 60px;
+}
+
+.page-header-navigation a:hover,
+.page-header-navigation a:focus{
+    color: rgb(19, 189, 70);
+}
+
+/*section amazing services*/
+
+/*.amazing-services-list{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size:0px;
+}
+.amazing-services-item{
+    width: 382px;
+    display: inline-block;
+    margin-right: 20px;
+}
+ .amazing-services-list li:nth-child(3n){
+    margin-right: 0px;
+}
+
+.amazing-services-list-title{
+    font-size: 14px;
+}
+.amazing-services-list-contant{
+    font-size: 14px;
+}
+/*.amazing-services-list li:not(nth-child(3n)){
+    margin-right:20px;
+}*/
+/*END/*HEADER AND SECTION WITH INLINE BLOCKS*/
+
+/*PAGE HEADER*/
+
+.container{
+    width: 1192px;
+    margin: 0px auto;
+}
+
+.page-header{
+margin-bottom: 116px;
+}
+
+.page-header-navigation{
+    display: flex;
+    min-height: 66px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-menu{
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: 492px;
+    justify-content: space-between;
+}
+
+.site-menu-link{
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "Montserrat";
+    color:#95e1d3;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    font-weight: 700;
+}
+
+.site-logo{
+    display: block;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: "Montserrat";
+    color: #95e1d3;
+    font-weight: 700;
+    line-height: 1.2;
+    transition: color 1s linear;
+}
+
+.site-logo:hover,
+.site-logo:focus{
+    color: #f38181;
+}
+
+.site-menu-link:hover,
+.site-menu-link:focus{
+    color: #f38181;
+}
+.site-menu-link::after{
+    display: block;
+    content:"";
+    width:0;
+    height:4px;
+    background-color: #f38181;
+    margin-top: 3px;
+    transition: width 200ms ease-in;
+}
+.site-menu-link:hover::after{
+    width: 100%;
+
+}
+
+/*SECTION AMAZING SERVICES*/
+
+.amazing-services{
+    margin-bottom: 92px;
+}
+.section-header{
+    margin-bottom: 90px;
+    text-align: center;
+}
+
+.section-descr::after{
+  /*  margin: 43px auto 66px;*/
+    display: block;
+    background-color:  #f38181;
+    width: 60px;
+    height: 3px;
+    content: "";
+    margin:0 auto;
+    margin-top: 43px;
+}
+
+.section-title{
+    margin: 0px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-family: "Kaushan Script";
+    color: rgb(51, 51, 51);
+    line-height: 1.2;  
+}
+
+.section-descr{
+    margin: 0px;
+    font-size: 30px;
+    font-family: "Montserrat";
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.amazing-services-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    /*position: relative;*/
+}
+
+.amazing-services-item{
+    position: relative;
+    width: 382px;
+    /*margin-right: 20px;*/
+    margin-bottom: 100px;
+    padding-left: 82px;
+
+}
+.amazing-services-item:nth-last-child(-n+3) {
+    margin-bottom: 0px;
+}
+
+.amazing-services-list-title{
+    margin: 0px;
+    margin-bottom: 20px;
+   /* padding-left: 40px;*/
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    line-height: 1.2;
+    
+}
+
+.amazing-services-list-contant{
+    margin: 0px;
+    font-size: 15px;
+    font-family: "Roboto";
+    color: rgb(153, 153, 153);
+    line-height: 1.6;
+   /* font-size: 15px
+    font-family: "Roboto"
+    line-height: 1.6;*/
+}
+
+.amazing-services-item::before{
+    position: absolute;
+    display: inline-block;
+    content: "";
+   /* flex-direction: column;*/
+   /* background-image: url("../img/icons/HOME.png");*/
+    background-repeat: no-repeat;
+    left: 20px;
+    top: 0px;
+}
+
+/*AMAZING-SERVICES-ICON*/
+
+.icon-alarm::before{
+    background-image: url("../img/icons/ALARM.png");
+    height: 31px;
+    width: 32px;
+    left: 20px;
+    top: 0px;
+}
+
+.icon-linegraph::before{
+    background-image: url("../img/icons/LINE GRAPH.png");
+    height: 32px;
+    width: 32px;
+}
+
+.icon-computer::before{
+    background-image: url("../img/icons/COMPUTER\ _\ OK.png");
+    height: 28px;
+    width: 32px;
+}
+
+.icon-book::before{
+    background-image: url("../img/icons/BOOK\ 2.png");
+    height: 32px;
+    width: 32px;
+}
+
+.icon-book::before{
+    background-image: url("../img/icons/BOOK\ 2.png");
+    height: 32px;
+    width: 32px;
+}
+
+.icon-home::before{
+    background-image: url("../img/icons/HOME.png");
+    height: 31px;
+    width: 32px;
+
+}
+
+.icon-image::before{
+    background-image: url("../img/icons/IMAGE.png");
+    height: 31px;
+    width: 32px;
+
+}
+
+/*SECTION TEAM*/
+
+.section-content {
+    width: 960px;
+    margin: 0 auto;
+    margin-top: 44px;
+   /* margin-bottom:80px;
+  /*  padding-top: 44px;
+    padding-bottom: 26px; */
+    text-align: center;
+    font-size: 15px;
+    font-family: "Roboto";
+    color: rgb(153, 153, 153);
+    line-height: 1.6;
+}
+
+.team{
+    padding-bottom: 86px;
+}
+.team-list{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.team-list-item-image{
+margin-bottom: 30px;
+}
+.team-list-item-name{
+    margin: 0px;
+    margin-bottom: 14px;
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+
+}
+.team-list-item-occupation{
+    margin: 0px;
+    font-size: 15px;
+    font-family: "Roboto";
+    color: rgb(153, 153, 153);
+    font-style: italic;
+    line-height: 1.6;
+    text-align: center;
+}
+.social-icons-list {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    opacity: 0;
+    transition: background-color 1s linear;
+}
+
+.team-list-item:hover .social-icons-list{
+    opacity: 1;
+}
+.team-list-item:hover .icons-overlay{
+    transform: translate(-10px, -10px);
+    box-shadow: 10px 10px 0 rgba(149, 225, 211, 1);
+    opacity: 1;
+}
+.team-list-item-image{
+    transition: transform 0.2s linear;
+}
+
+.team-list-item:hover .team-list-item-image {
+    transform: translate(-10px, -10px);
+}
+    
+.icons-overlay{
+    opacity: 0;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 470px;
+    cursor: pointer;
+    background: linear-gradient(to bottom,
+    rgba(252, 227, 138, 0.9) 0%,
+    rgba(243, 129, 129, 0.9) 100%);
+    transition: transform 0.2s linear, opacity 0.2s linear;
+    }
+
+.social-icons-list a{
+    display: block;
+    width: 56px;
+    height: 56px;
+    background-color: #fce38a;
+   /* border: rgba(243, 129, 129, 0.502) solid 1px;*/
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+.social-icons-list a:hover,
+.social-icons-list a:focus {
+    background-color:  #95e1d3;
+    transition: all 1s linear;
+} 
+.icon-facebook a{
+    background-image: url("../img/icons/facebook.png");
+}
+.icon-twitter a{
+    background-image: url("../img/icons/twitter.png");
+}
+.icon-pinterest a{
+    background-image: url("../img/icons/pinterest.png");
+}
+.icon-instagram a{
+    background-image: url("../img/icons/instagram.png");
+}
+
+.team-list-item{
+    position: relative;
+}
+
+.social-icons-list {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.footer-wrapper{
+    border-top: 1px solid #e5e5e5;
+    padding: 26px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.footertext{
+    margin:0px;
+    padding-top: 10px;
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(51, 51, 51);
+    line-height: 1.2;
+    text-align: center;
+}
+.footertext a{
+    text-decoration: none;
+    display: inline-block;
+    color: #f38181;
+}
+
+.footer-wrapper-form {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.footer-wrapper-email {
+    width: 230px;
+    height: 40px;
+    box-sizing: border-box;
+    padding-left: 14px;
+   /* font-size: 15px;
+    /*font-family: "Roboto";*/
+    font-weight: 300;
+    font-style: italic;
+    text-align: left;
+    text-transform: capitalize;
+    border: 1px solid rgb(204, 204, 204);
+}
+.footer-wrapper-subscribe-button {
+    width: 152px;
+    height: 40px;
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    background-color: rgb(149, 225, 211);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    border: transparent;
+}
+.footer-wrapper-subscribe-button:hover,
+.footer-wrapper-subscribe-button:focus {
+    cursor: pointer;
+    background-color:  #f38181;
+    transition: 0.5s;
+}

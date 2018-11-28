@@ -1,0 +1,145 @@
+html {
+  box-sizing:border-box;
+}
+
+*,
+*::before, 
+*::after{
+	box-sizing: inherit;
+}
+body {
+ font-family: "PlayfairDisplay","Myriad Pro";
+ color: #626262;
+ font-size: 14 px;
+ line-height: 24 px;
+ font-weight: 400;
+
+}
+.wrapper {
+ width: 900px;
+ padding-top: 45px;
+ padding-bottom: 71px;
+ margin: 0 auto;
+}
+.page-header {
+  margin-bottom: 74px;
+}
+.menu-list {
+  list-style: none;
+  text-align: center;
+  padding:0px;
+  margin: 0px;
+  font-size: 0px;
+}
+.menu-item {
+  display: inline-block;
+ 
+}
+.menu-link {
+  padding: 25px 52px;
+  font-size: 15px;
+  color: #626262;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+}
+.section {
+  padding: 0px;
+  margin: 0px;
+
+}
+.menu-link:hover {
+  color: #03a9f
+}
+.menu-list li:last-child{
+  margin-right: 0px;
+}
+.main{
+  padding: 0;
+  margin: 0;
+  margin-bottom: 18px;
+ font-size: 0; 
+}
+.visually-hidden:not(:focus):not(:active),
+input [type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border:0;
+    padding: 0;
+    white-space:nowrap;
+    clip-path:inset(100%);
+    clip: rect(0 0 0 0);
+    overflow:hidden;
+}
+
+.main li{
+  margin: 0px 60px 110px 0px; 
+  display: inline-block;
+  width: 420px;
+  list-style: none;
+
+}
+.main li:nth-child(2n) {
+  margin-right: 0px;
+}
+.main li:nth-last-child(-n+2){
+  margin-bottom: 0px; 
+}
+.art {
+  display: inline-block;
+  width: 420px;
+  margin-bottom: 18px;
+}
+.article-picture {
+  margin-bottom: 26px;
+
+}
+.navmenu-item {
+  margin: 0px;
+  padding: 0px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  width: 420px;
+  display: inline-block;
+  list-style: none;
+  font-size: 14px;
+  line-height: 17px;
+}
+.article-title {
+  margin: 0px;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+.article-text{
+  margin:0px;
+  font-size: 14px;
+  line-height: 23px;
+}
+
+.button {
+  margin: 0 auto;
+  display: block;
+  background-color: #fff;
+  font-size: 15px;
+  padding: 1px 20px 1px;
+  outline: none;
+  border: #626262 solid 1px;
+  border-radius: 1px;
+  line-height: 32px;
+
+} 
+
+.button:hover {
+  color: #510cd1;
+}
+
+.button:active {
+  background: rgba(114, 3, 3, 0.2);    
+}
+.button:focus {
+  border: #58570c solid 1px;
+  color: #f46303;
+}

@@ -1,0 +1,47 @@
+@font-face {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/roboto-slab-v7-latin-regular.woff2") format('woff2');
+    src: url("../fonts/roboto-slab-v7-latin-regular.woff") format('woff');
+}
+
+
+@font-face {
+    font-family: "lobster";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/lobster-v20-latin-regular.woff2") format('woff2');
+    src: url("../fonts/lobster-v20-latin-regular.woff") format('woff');
+} 
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/montserrat-v12-latin-regular.woff2") format('woff2');
+    src: url("../fonts/montserrat-v12-latin-regular.woff") format('woff');
+} 
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/montserrat-v12-latin-700.woff2") format('woff2');
+    src: url("../fonts/montserrat-v12-latin-700.woff") format('woff');
+} 
+
+@font-face {
+    font-family: 'KoHo';
+    font-style: italic;
+    font-weight: 400;
+    src: url("../fonts/koho-v1-latin-italic.woff2") format('woff2');
+    src: url("../fonts/koho-v1-latin-italic.woff") format('woff');
+} 
+
+
+@font-face {
+    font-family: 'KoHo';
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/koho-v1-latin-normal.woff2") format('woff2');
+    src: url("../fonts/koho-v1-latin-normal.woff") format('woff');
+} 
