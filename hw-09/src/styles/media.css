@@ -23,12 +23,12 @@
         justify-content: space-between;
         flex-direction: row-reverse;
         align-items: center;
-
     }
+
     .site-menu{
-   
         margin: 0px;
     }
+
     .site-logo{
         margin-bottom: 0;
     }
@@ -64,7 +64,6 @@
     }
     .main-contant-section{
         padding-bottom: 74px;
-
     }
 
     .partners-list{
@@ -78,7 +77,6 @@
     .partners-list-item{
         flex: 0 0 220px;
         margin-bottom: 58px;
-       /* margin-right: 20px;*/
       }
 
     .partners-list-item:nth-child(2n+1){
@@ -91,38 +89,31 @@
 
     button {
         margin: 0 auto;
-
     }
-
 }
 
+  @media (min-width:962px) { 
 
-/*DESKTOP*/
-
-@media (min-width:962px) { /*фактическая ширина 940, но нужно чтобі врапер біл чуть меньше ?????*/
-
-    .wrapper{
-        width: 940px;
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    .section-holidays{
-        width: 500px;
-    }
-
-    .partners-list{
-        width: 940px;
-    }
-
-    .partners-list-item:not(:last-child){
-        margin: 0;
-        margin-right: 20px;
-    }
-    .partners-list-item:last-child{
-        margin: 0;
-    }
-   
+ .wrapper {
+  width: 940px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
+.section-holidays{
+ width: 500px;
+}
 
+  .partners-list {
+  width: 940px;
+}
+
+  .partners-list-item:not(:last-child) {
+  margin: 0;
+  margin-right: 20px;
+}
+
+  .partners-list-item:last-child {
+  margin: 0;
+  }
+}
