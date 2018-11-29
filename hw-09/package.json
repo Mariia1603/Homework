@@ -11,7 +11,7 @@
     "clean:build": "rimraf build && mkdir build",
     "html:build": "cpx src/*.html build",
     "html:minify": "html-minifier --collapse-whitespace src/index.html -o build/index.html",
-    "images:build": "imagemin src/img/* --out-dir=build/img",
+    "images:build": "imagemin src/img/* -o=build/img",
     "prebuild": "npm run lint",
     "build": "npm run clean:build && npm run images:build && npm run css:build && npm run html:build"
   },
