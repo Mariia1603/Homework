@@ -7,13 +7,13 @@
     "server": "browser-sync src --watch",
     "dev": "npm run server",
     "lint": "stylelint src/styles/*.css", 
-    "css:build": "postcss src/styles/*.css --use autoprefixer --use cssnano -d build/css",
+    "styles:build": "postcss src/styles/*.css --use autoprefixer --use cssnano -d build/css",
     "clean:build": "rimraf build && mkdir build",
     "html:build": "cpx src/*.html build",
     "html:minify": "html-minifier --collapse-whitespace src/index.html -o build/index.html",
     "images:build": "imagemin src/img/* -o=build/img",
     "imagesicons:build": "imagemin src/img/icons/* -o=build/img",
-    "build": "npm run clean:build && npm run images:build && npm run css:build && npm run html:build"
+    "build": "npm run clean:build && npm run images:build && npm run styles:build && npm run html:build"
   },
   "author": "",
   "license": "ISC",
