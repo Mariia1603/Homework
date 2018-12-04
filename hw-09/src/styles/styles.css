@@ -1,21 +1,20 @@
 html {
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
 *,
-*::before, 
+*::before,
 *::after {
   box-sizing: inherit;
 }
 
-body{
+body {
   font-family: "Montserrat";
-
 }
 
-.img{
+.img {
   display: block;
   max-width: 100%;
-  height:auto;
+  height: auto;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -33,7 +32,7 @@ input[type="radio"].visually-hydden {
   overflow: hidden;
 }
 
-.wrapper{
+.wrapper {
   width: 320px;
   /*width: 282px;*/
   margin: 0 auto;
@@ -42,7 +41,7 @@ input[type="radio"].visually-hydden {
 
 /*SECTION HEADER*/
 
-.page-header{
+.page-header {
   margin: 0 auto;
   text-align: center;
   background-color: black;
@@ -52,14 +51,14 @@ input[type="radio"].visually-hydden {
   background-size: cover;
 }
 
-.page-header-navigation{
+.page-header-navigation {
   margin-bottom: 40px;
 }
 
-.site-menu{
+.site-menu {
   width: 180px;
   min-height: 36px /*нужно ли давать ?*/;
-  margin:0 auto;
+  margin: 0 auto;
   margin-bottom: 116px;
   padding: 0px;
   list-style: none;
@@ -67,34 +66,34 @@ input[type="radio"].visually-hydden {
   justify-content: space-between;
 }
 
-.site-menu-item{
+.site-menu-item {
   text-decoration: none;
 }
 
-.site-menu-item-link{
+.site-menu-item-link {
   border: 1px solid;
-  border-color:transparent;
+  border-color: transparent;
 }
 
 .site-menu-item a:hover,
-.site-menu-item a:focus{
+.site-menu-item a:focus {
   border: 1px solid #ffffff;
-  border-radius:30px;
+  border-radius: 30px;
 }
 
-.site-menu a{
+.site-menu a {
   display: block;
   padding: 10px 18px;
   text-decoration: none;
   font-size: 14px;
   font-family: "Montserrat";
-  color:  rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   font-weight: bold;
   line-height: 1.2;
   text-align: center;
 }
 
-.site-logo{
+.site-logo {
   display: block;
   text-decoration: none;
   font-size: 20px;
@@ -107,22 +106,21 @@ input[type="radio"].visually-hydden {
 }
 
 .site-logo:hover,
-.site-logo:focus{
+.site-logo:focus {
   background-color: aquamarine;
   cursor: pointer;
 }
 
-.section-holidays{
- /* width: 280px;*/
- /* margin: 0 auto;*/
+.section-holidays {
+  /* width: 280px;*/
+  /* margin: 0 auto;*/
   padding-bottom: 138px;
-
 }
-.section-holidays-header{
+.section-holidays-header {
   padding-bottom: 140px;
 }
 
-.section-title{
+.section-title {
   margin: 0px;
   margin-bottom: 20px;
   font-size: 28px;
@@ -134,7 +132,7 @@ input[type="radio"].visually-hydden {
   text-align: center;
 }
 
-.section-descr{
+.section-descr {
   width: 220px;
   margin: 0 auto;
   margin-bottom: 20px;
@@ -146,41 +144,41 @@ input[type="radio"].visually-hydden {
   /*text-align: center;*/
 }
 
-.section-link{
- display: block;
- text-decoration: none;
- padding: 14px 44px ;
- border: 2px solid #ffffff;
- border-radius:30px;
- background-color: #ff4e50;
- font-size: 14px;
- font-family:"Montserrat";
- color: #ffffff;
- font-weight: bold; 
-   line-height: 1.2;
+.section-link {
+  display: block;
+  text-decoration: none;
+  padding: 14px 44px;
+  border: 2px solid #ffffff;
+  border-radius: 30px;
+  background-color: #ff4e50;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #ffffff;
+  font-weight: bold;
+   line-height: 1.2;
 }
 
 .section-link:hover,
-.section-link:focus{
+.section-link:focus {
   background-color: rgb(167, 236, 127);
 }
 /*SECTION CONTANT*/
-.main-contant-section{
+.main-contant-section {
   padding-bottom: 58px;
-  padding-top:70px;
+  padding-top: 70px;
 }
 
-.section-partners-title{
+.section-partners-title {
   margin: 0px;
   margin-bottom: 20px;
   text-align: center;
   font-size: 22px;
-    color: rgb(51, 51, 51);
-  font-weight:700;
+   color: rgb(51, 51, 51);
+  font-weight: 700;
 }
 
-.partners-list{
-/*  width: 224px;*/
+.partners-list {
+  /*  width: 224px;*/
   /*margin: 0 auto;*/
   padding: 0px;
   margin-bottom: 30px;
@@ -188,36 +186,36 @@ input[type="radio"].visually-hydden {
   list-style: none;
 }
 
-.partners-list-item{
+.partners-list-item {
   width: 220px;
   margin: 0 auto;
 }
 
-.partners-list-item:not(:last-child){
+.partners-list-item:not(:last-child) {
   margin-bottom: 30px;
 }
 
-.partner-list-item-img{
- /* position: absolute;*/
+.partner-list-item-img {
+  /* position: absolute;*/
   width: 122px;
   height: 122px;
   border: 1px solid;
-  border-radius:50%;
+  border-radius: 50%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.img-cover{
+.img-cover {
   position: relative;
   margin-bottom: 20px;
 }
 
-.img-cover::after{
-  position:absolute;
+.img-cover::after {
+  position: absolute;
   right: 50px;
   bottom: 8px;
-  content:"";
+  content: "";
   display: block;
   width: 35px;
   height: 35px;
@@ -227,58 +225,56 @@ input[type="radio"].visually-hydden {
   background-position: center;
 }
 
-.icon-tv::after{
-  background-image: url(../img/icons/Shape\ 128.png);
+.icon-tv::after {
+  background-image: url(../img/Shape128.png);
   background-color: #ff4e50;
 }
 
-.icon-bottle::after{
-  background-image: url(../img/icons/Shape\ 155.png);
+.icon-bottle::after {
+  background-image: url(../img/Shape155.png);
   background-color: #ffa507;
 }
 
-.icon-cup::after{
-  background-image: url(../img/icons/Shape\ 153.png);
+.icon-cup::after {
+  background-image: url(../img/Shape153.png);
   background-color: #1cd7ad;
 }
 
-.icon-arrow::after{
-  background-image: url(../img/icons/Shape\ 170.png);
+.icon-arrow::after {
+  background-image: url(../img/Shape170.png);
   background-color: #4e73db;
 }
 
-.partner-list-item-name{
+.partner-list-item-name {
   margin: 0px;
   margin-bottom: 20px;
   font-size: 14px;
- /*font-family: "Montserrat";*/
+   /*font-family: "Montserrat";*/
     color: #333333;
-  font-weight:700;
-  line-height:1.2;
-
+  font-weight: 700;
+  line-height: 1.2;
 }
-.partner-list-item-descr{
+.partner-list-item-descr {
   margin: 0px;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 200;
   line-height: 1.2;
   color: rgb(102, 102, 102);
-
 }
 
-button{
+button {
   display: block;
   width: 280px;
- /* text-decoration: none;*/
-  padding: 8px 68px ;
+  /* text-decoration: none;*/
+  padding: 8px 68px;
   border: 2px solid #ff4e50;
-  border-radius:30px;
+  border-radius: 30px;
   font-size: 14px;
-  font-family:"Montserrat";
+  font-family: "Montserrat";
   color: #ff4e50;
-  font-weight: bold; 
-   line-height: 1.2;
+  font-weight: bold;
+   line-height: 1.2;
 }
 
 button:hover,
